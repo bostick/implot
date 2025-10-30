@@ -4,13 +4,20 @@ project(implot)
 
 include(FetchContent)
 
+
+if("${LOCAL_IMGUI_DIR}" STREQUAL "")
+    message(FATAL_ERROR "LOCAL_IMGUI_DIR is not set!")
+endif()
+
 FetchContent_Declare(imgui
-    GIT_REPOSITORY
-        https://github.com/bostick/imgui.git
-    GIT_TAG
-        bostick-main
-    GIT_SHALLOW 1
-    GIT_PROGRESS 1
+    # GIT_REPOSITORY
+    #     https://github.com/bostick/imgui.git
+    # GIT_TAG
+    #     bostick-main
+    # GIT_SHALLOW 1
+    # GIT_PROGRESS 1
+    SOURCE_DIR
+        ${LOCAL_IMGUI_DIR}
 )
 FetchContent_MakeAvailable(imgui)
 
