@@ -31,6 +31,11 @@ target_link_libraries(implot-lib
 )
 
 
+target_compile_definitions(implot-lib
+    PRIVATE
+        "IMPLOT_CUSTOM_NUMERIC_TYPES=(float)(int64_t)"
+)
+
 set_target_properties(implot-lib
     PROPERTIES
         CXX_STANDARD 20
