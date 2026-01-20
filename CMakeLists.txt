@@ -40,6 +40,11 @@ target_compile_options(implot-lib
         -Wall -Wextra -pedantic -Werror -Wconversion -Wno-sign-conversion -Wno-implicit-int-float-conversion
 )
 
+target_compile_definitions(implot-lib
+    PRIVATE
+        "IMPLOT_CUSTOM_NUMERIC_TYPES=(float)(int64_t)"
+)
+
 set_target_properties(implot-lib
     PROPERTIES
         CXX_STANDARD 20
