@@ -1,4 +1,7 @@
 
+project(implot)
+
+
 include(FetchContent)
 
 FetchContent_Declare(imgui
