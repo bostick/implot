@@ -1374,6 +1374,8 @@ IMPLOT_API void ShowDemoWindow(bool* p_open = nullptr);
 // If you absolutely must use these functions and do not want to receive compiler
 // warnings, set '#define IMPLOT_DISABLE_OBSOLETE_WARNINGS'.
 
+#define IMPLOT_DISABLE_OBSOLETE_FUNCTIONS
+
 #ifndef IMPLOT_DISABLE_OBSOLETE_FUNCTIONS
 
 #ifndef IMPLOT_DISABLE_DEPRECATED_WARNINGS
