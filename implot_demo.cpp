@@ -1737,7 +1737,7 @@ void Demo_AutoFittingData() {
         ImPlot::PlotLine("Line",data,101);
         ImPlot::PlotStems("Stems",data,101);
         ImPlot::EndPlot();
-    };
+    }
 }
 
 //-----------------------------------------------------------------------------
