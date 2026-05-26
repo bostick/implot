@@ -5,12 +5,14 @@ project(implot)
 include(FetchContent)
 
 FetchContent_Declare(imgui
-    GIT_REPOSITORY
-        https://github.com/bostick/imgui.git
-    GIT_TAG
-        milestone-6-branch
-    GIT_SHALLOW 1
-    GIT_PROGRESS 1
+    # GIT_REPOSITORY
+    #     https://github.com/bostick/imgui.git
+    # GIT_TAG
+    #     milestone-6-branch
+    # GIT_SHALLOW 1
+    # GIT_PROGRESS 1
+    SOURCE_DIR
+        ${LOCAL_IMGUI_DIR}
 )
 FetchContent_MakeAvailable(imgui)
 
