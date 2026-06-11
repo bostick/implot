@@ -8,7 +8,7 @@ FetchContent_Declare(imgui
     GIT_REPOSITORY
         https://github.com/bostick/imgui.git
     GIT_TAG
-        bostick-main
+        milestone-7-branch
     GIT_SHALLOW 1
     GIT_PROGRESS 1
 )
